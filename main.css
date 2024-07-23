@@ -153,7 +153,7 @@ main.visual {
 
 section.overview {
     /* content-section */
-    background: url(images/mario.gif) no-repeat;
+    background: url(images/background.png) no-repeat;
     display: flex;
 
     background-color: #423f0d;
@@ -190,12 +190,12 @@ section.overview .content-wrapper {
 }
 
 section.overview .content-wrapper #title {
-    color: #ffdc18;
+    color: #E67E22;
     text-align: center;
 }
 
 section.overview .content-wrapper #content {
-    color: #f8fa78;
+    color: #E59866;
     text-align: center;
 }
 
@@ -205,7 +205,7 @@ section.about {
     /* content-section */
     display: flex;
 
-    background-color: #b6a616;
+    background-color: #303934;
     /* Used if the image is unavailable */
     height: 100vh;
     /* You must set a specified height */
@@ -239,7 +239,7 @@ section.about .content-wrapper {
     margin-left: 2%;
     margin-top: auto;
     margin-bottom: auto;
-    background: rgb(143, 88, 26);
+    background: #292c42;
 }
 
 section.about .content-wrapper #title {
@@ -261,7 +261,7 @@ section.about .team{
     margin-left: 5%;
     margin-top: auto;
     margin-bottom: auto;
-    background: rgb(201, 188, 73);
+    background: #292c42;
 }
 
 section.about .team #Artist{
@@ -308,7 +308,7 @@ section.projects {
     display: flex;
 
     
-    background-color: #bebc43;
+    background: url("images/brujita_1.gif");
     /* Used if the image is unavailable */
     height: 100vh;
     /* You must set a specified height */
@@ -356,6 +356,8 @@ section.contact {
     /* content-section */
     display: flex;
 
+    background: #2b2d2e;
+
     /* Used if the image is unavailable */
     height: 100vh;
     /* You must set a specified height */
@@ -389,12 +391,12 @@ section.contact .content-wrapper {
 }
 
 section.contact .content-wrapper #title {
-    color: #ffdc18;
+    color: #E67E22;
     text-align: center;
 }
 
 section.contact .content-wrapper #content {
-    color: #f8fa78;
+    color: #E59866;
     text-align: center;
 }
 
@@ -404,5 +406,5 @@ footer.info {
     position: absolute;
     width: 100%;
     height: 2.5rem;
-    background: #323310;
+    background: #31493b;
 }
