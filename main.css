@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.material-symbols-outlined {
+    color: aliceblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: black;
+}
+
+/* ---- header ---- */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(0, 0, 0, .2);
+}
+
+
+.logo img {
+    width: 80px;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #f7f097fd;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+
+    #back-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    .header {
+        background-color: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .5);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .10);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar {
+        height: 10.7rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        height: 3.5rem;
+        text-align: center;
+    }
+
+    .navbar a:hover {
+        background: #d4d115fd;
+        transition: .5s;
+        font-weight: 500;
+        margin-left: 1.5rem;
+    }
+
+    #back-image {
+        width: auto;
+        height: auto;
+    }
+
+
+}
+
+/* --- Main.visual -- */
+
+main,
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+div.site-wrapper {
+    /* section */
+    background: #75741c;
+    max-height: 100%;
+}
+
+main.visual {
+    /* container */
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 2.5rem;
+}
+
+/* --- Overview Section --- */
+
+section.overview {
+    /* content-section */
+    background: url(images/mario.gif) no-repeat;
+    display: flex;
+
+    background-color: #423f0d;
+    /* Used if the image is unavailable */
+    height: 100vh;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+section.overview div.image {
+    float: right;
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+section.overview div.image img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+section.overview .content-wrapper {
+    height: max-content;
+    float: center;
+    width: 60%;
+    margin: auto;
+}
+
+section.overview .content-wrapper #title {
+    color: #ffdc18;
+    text-align: center;
+}
+
+section.overview .content-wrapper #content {
+    color: #f8fa78;
+    text-align: center;
+}
+
+
+/* --- About Section --- */
+section.about {
+    /* content-section */
+    display: flex;
+
+    background-color: #b6a616;
+    /* Used if the image is unavailable */
+    height: 100vh;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+section.about div.image {
+    float: right;
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+section.about div.image img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+section.about .content-wrapper {
+    height: max-content;
+    float: left;
+    width: 40%;
+    padding: 2%;
+    margin-left: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: rgb(143, 88, 26);
+}
+
+section.about .content-wrapper #title {
+    color: #ffdc18;
+    text-align: left;
+}
+
+section.about .content-wrapper #content {
+    color: #f8fa78;
+    text-align: left;
+}
+
+
+section.about .team{
+    height: 80%;
+    float: right;
+    width: 50%;
+    padding: 3%;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: rgb(201, 188, 73);
+}
+
+section.about .team #Artist{
+    height: 45%;
+    width: 45%;
+    padding: 3%;
+    margin-top: auto;
+    margin-bottom: 10%;
+    float: left;
+    background: rgb(243, 67, 44);
+}
+
+section.about .team #Programmer{
+    height: 45%;
+    width: 45%;
+    padding: 3%;
+    margin-top: auto;
+    margin-bottom: 10%;
+    float: right;
+    background: rgb(243, 140, 44);
+}
+section.about .team #Musician{
+    height: 45%;
+    width: 45%;
+    padding: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+    background: rgb(44, 203, 243);
+}
+section.about .team #Web-Programmer{
+    height: 45%;
+    width: 45%;
+    padding: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: right;
+    background: rgb(100, 243, 44);
+}
+
+/* --- Projects Section --- */
+section.projects {
+    /* content-section */
+    display: flex;
+
+    
+    background-color: #bebc43;
+    /* Used if the image is unavailable */
+    height: 100vh;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+section.projects div.image {
+    float: right;
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+section.projects div.image img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+section.projects .content-wrapper {
+    height: max-content;
+    float: center;
+    width: 60%;
+    margin: auto;
+}
+
+section.projects .content-wrapper #title {
+    color: #ffdc18;
+    text-align: center;
+}
+
+section.projects .content-wrapper #content {
+    color: #f8fa78;
+    text-align: center;
+}
+
+/* --- Contact Section --- */
+section.contact {
+    /* content-section */
+    display: flex;
+
+    /* Used if the image is unavailable */
+    height: 100vh;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+section.contact div.image {
+    float: right;
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+section.contact div.image img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+section.contact .content-wrapper {
+    height: max-content;
+    float: center;
+    width: 60%;
+    margin: auto;
+}
+
+section.contact .content-wrapper #title {
+    color: #ffdc18;
+    text-align: center;
+}
+
+section.contact .content-wrapper #content {
+    color: #f8fa78;
+    text-align: center;
+}
+
+/* --- footer --- */
+
+footer.info {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    background: #323310;
+}
