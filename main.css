@@ -102,7 +102,7 @@ body {
     }
 
     #check:checked~.navbar {
-        height: 10.7rem;
+        height: 3.7rem;
     }
 
     .navbar a {
@@ -152,7 +152,7 @@ main.visual {
 
 section.overview {
     /* content-section */
-    background: url(images/background.png) no-repeat;
+    background: url(images/overview.png) no-repeat;
     display: flex;
 
     background-color: #423f0d;
@@ -199,107 +199,6 @@ section.overview .content-wrapper #content {
 }
 
 
-/* --- About Section --- */
-section.about {
-    /* content-section */
-    display: flex;
-
-    background-color: #303934;
-    /* Used if the image is unavailable */
-    height: 100vh;
-    /* You must set a specified height */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-}
-
-
-section.about div.image {
-    float: right;
-    display: block;
-    width: 40%;
-    margin: auto;
-}
-
-section.about div.image img {
-    width: 100%;
-    height: auto;
-    align-self: center;
-}
-
-section.about .content-wrapper {
-    height: max-content;
-    float: left;
-    width: 40%;
-    padding: 2%;
-    margin-left: 2%;
-    margin-top: auto;
-    margin-bottom: auto;
-    background: #292c42;
-}
-
-section.about .content-wrapper #title {
-    color: #ffdc18;
-    text-align: left;
-}
-
-section.about .content-wrapper #content {
-    color: #f8fa78;
-    text-align: left;
-}
-
-
-section.about .team{
-    height: 80%;
-    float: right;
-    width: 50%;
-    padding: 3%;
-    margin-left: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
-    background: #292c42;
-}
-
-section.about .team #Artist{
-    height: 45%;
-    width: 45%;
-    padding: 3%;
-    margin-top: auto;
-    margin-bottom: 10%;
-    float: left;
-    background: rgb(243, 67, 44);
-}
-
-section.about .team #Programmer{
-    height: 45%;
-    width: 45%;
-    padding: 3%;
-    margin-top: auto;
-    margin-bottom: 10%;
-    float: right;
-    background: rgb(243, 140, 44);
-}
-section.about .team #Musician{
-    height: 45%;
-    width: 45%;
-    padding: 3%;
-    margin-top: auto;
-    margin-bottom: auto;
-    float: left;
-    background: rgb(44, 203, 243);
-}
-section.about .team #Web-Programmer{
-    height: 45%;
-    width: 45%;
-    padding: 3%;
-    margin-top: auto;
-    margin-bottom: auto;
-    float: right;
-    background: rgb(100, 243, 44);
-}
 
 /* --- Projects Section --- */
 section.projects {
@@ -307,7 +206,7 @@ section.projects {
     display: flex;
 
     
-    background: url("images/brujita_1.gif");
+    background:  url("images/sushi.png");
     /* Used if the image is unavailable */
     height: 100vh;
     /* You must set a specified height */
@@ -320,43 +219,37 @@ section.projects {
 }
 
 
-section.projects div.image {
-    float: right;
-    display: block;
-    width: 40%;
-    margin: auto;
-}
-
-section.projects div.image img {
-    width: 100%;
-    height: auto;
-    align-self: center;
-}
 
 section.projects .content-wrapper {
     height: max-content;
     float: center;
     width: 60%;
     margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px;
 }
 
 section.projects .content-wrapper #title {
-    color: #ffdc18;
+    color: #770909;
     text-align: center;
 }
 
 section.projects .content-wrapper #content {
-    color: #f8fa78;
+    color: #f55a5a;
     text-align: center;
 }
 
-/* --- Contact Section --- */
-section.contact {
+section.projects .content-wrapper a:visited {
+    color: #81d83a;
+}
+
+/* -- project-witch */
+section.project-witch {
     /* content-section */
     display: flex;
 
-    background: #2b2d2e;
-
+    
+    background: url("images/projects.png");
     /* Used if the image is unavailable */
     height: 100vh;
     /* You must set a specified height */
@@ -369,33 +262,22 @@ section.contact {
 }
 
 
-section.contact div.image {
-    float: right;
-    display: block;
-    width: 40%;
-    margin: auto;
-}
-
-section.contact div.image img {
-    width: 100%;
-    height: auto;
-    align-self: center;
-}
-
-section.contact .content-wrapper {
+section.project-witch .content-wrapper {
     height: max-content;
     float: center;
     width: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px;
     margin: auto;
 }
 
-section.contact .content-wrapper #title {
-    color: #E67E22;
+section.project-witch .content-wrapper #title {
+    color: #ffdc18;
     text-align: center;
 }
 
-section.contact .content-wrapper #content {
-    color: #E59866;
+section.project-witch .content-wrapper #content {
+    color: #b0b31a;
     text-align: center;
 }
 
@@ -405,4 +287,16 @@ footer.info {
     width: 100%;
     height: 2.5rem;
     background: #423f0d;
+}
+
+/* --- Global --- */
+a{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+
+a:visited {
+color: #437a16;
 }
