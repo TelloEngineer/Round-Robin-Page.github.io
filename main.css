@@ -239,7 +239,7 @@ section.projects .content-wrapper #content {
     text-align: center;
 }
 
-section.projects .content-wrapper a:visited {
+section.projects .content-wrapper a:visited, section.projects .content-wrapper a {
     color: #81d83a;
 }
 
@@ -297,6 +297,6 @@ a{
 }
 
 
-a:visited {
+a:visited, a{
 color: #437a16;
 }
