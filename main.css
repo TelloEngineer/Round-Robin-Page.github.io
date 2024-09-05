@@ -285,12 +285,12 @@ section.project-witch .content-wrapper #content {
 footer.info {
     position: absolute;
     width: 100%;
-    height: 2.5rem;
+    height: 3.5rem;
     background: #6b6a5e;
     color: #770909;
 }
 
-footer.info a{
+footer.info a,footer.info a:visited{
     color:#b4b62e
 }
 
